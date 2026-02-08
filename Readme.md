@@ -199,6 +199,10 @@ The evaluation results demonstrate strong generalization while maintaining extre
 </div>
 
 ### 🧪 Model Evaluation Visuals
+<div align="center">
+  <img src="proof_images/7.jpeg" width="850"/>
+</div>
+
 
 <table align="center" border="1" cellpadding="10" cellspacing="0">
 
@@ -243,11 +247,6 @@ The evaluation results demonstrate strong generalization while maintaining extre
       <img src="proof_images/6.jpeg" width="380"/>
     </td>
   </tr>
-  
-<div align="center">
-  <img src="proof_images/7.jpeg" width="850"/>
-</div>
-
 </table>
 
 
@@ -291,17 +290,17 @@ By combining accuracy with ultra-lightweight deployment, the system supports Ind
 <table align="center">
   <tr>
     <td align="center">
-      <a href="https://github.com/PriyadharsanD">
+      <a href="https://github.com/PRIY4DH4RS4N-D">
         <strong>Priyadharsan D</strong>
       </a><br/>
     </td>
     <td align="center">
-      <a href="https://github.com/SenbaseelanV">
+      <a href="https://github.com/Senbagaseelan18">
         <strong>Senbaseelan V</strong>
       </a><br/>
     </td>
     <td align="center">
-      <a href="https://github.com/TharunBabuV">
+      <a href="https://github.com/TharunBabu-05">
         <strong>Tharun Babu V</strong>
       </a><br/>
     </td>
@@ -312,6 +311,7 @@ By combining accuracy with ultra-lightweight deployment, the system supports Ind
     </td>
   </tr>
 </table>
+
 
 
 
