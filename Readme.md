@@ -86,7 +86,38 @@ Applied controlled augmentations (rotation, mild blur)
 - Folder-based labeling for supervised learning
 
 - Ensured balanced class distribution
+```mermaid
+flowchart TD
+    A[Wafer Images] --> B[Classification]
 
+    B --> C[Clean]
+    B --> D[Other]
+    B --> E[Defects]
+
+    E --> F1[Bridge]
+    E --> F2[Crack]
+    E --> F3[LER]
+    E --> F4[Via]
+    E --> F5[Open]
+    E --> F6[Particle]
+    E --> F7[CMP]
+    E --> F8[Stain]
+
+    style A fill:#ffdd99,stroke:#333,stroke-width:2px,color:#000
+    style B fill:#ffcc66,stroke:#333,stroke-width:2px,color:#000
+    style C fill:#90ee90,stroke:#333,stroke-width:1px,color:#000
+    style D fill:#d3d3d3,stroke:#333,stroke-width:1px,color:#000
+    style E fill:#ff9999,stroke:#333,stroke-width:1px,color:#000
+    style F1 fill:#ff6666,stroke:#333,color:#000
+    style F2 fill:#ff6666,stroke:#333,color:#000
+    style F3 fill:#ff6666,stroke:#333,color:#000
+    style F4 fill:#ff6666,stroke:#333,color:#000
+    style F5 fill:#ff6666,stroke:#333,color:#000
+    style F6 fill:#ff6666,stroke:#333,color:#000
+    style F7 fill:#ff6666,stroke:#333,color:#000
+    style F8 fill:#ff6666,stroke:#333,color:#000
+
+```
 ---
 
 ## Model Development
@@ -179,6 +210,7 @@ By combining accuracy with ultra-lightweight deployment, the system supports Ind
 
 - 📊 **Evaluation Results (Confusion Matrix & Metrics)**  
   Included in repository under `/results`
+
 
 
 
