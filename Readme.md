@@ -23,10 +23,10 @@
 ---
 ## 🔗 Quick Access
 
-- 📂 Dataset: [[Google Drive Link]()]
-- 🧠 ONNX Model (~293 KB): [[Drive Link]()]
+- 📂 Dataset: [[Google Drive Link](https://drive.google.com/drive/folders/1jaYOw0kGByYc47ywAbBTTPccdnOv3Ki9?usp=drive_link)]
+- 🧠 ONNX Model (~293 KB): [[Drive Link](https://drive.google.com/file/d/1mVV39pQ_re-IcLTrn-lj6TT7kFtDbGKh/view?usp=drive_link)]
 - 📁 Complete Project Artifacts (Dataset + ONNX Model + Source Code)  
-  👉 [[Google Drive – Full Access Folder Link]()]
+  👉 [[Google Drive – Full Access Folder Link](https://drive.google.com/drive/folders/1Atj94_75VKlZoFJyq0if6iPj1cTrWbvc?usp=drive_link)]
 ---
 
 ## 📌 Project Overview
@@ -200,6 +200,38 @@ This solution enables faster and more reliable semiconductor defect inspection b
 By combining accuracy with ultra-lightweight deployment, the system supports Industry 4.0 manufacturing environments with practical, scalable AI.
 
 ---
+
+## 👥 Team
+
+<p align="center">
+  <strong>I4C DeepTech Hackathon 2026</strong>
+</p>
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <a href="https://github.com/PriyadharsanD">
+        <strong>Priyadharsan D</strong>
+      </a><br/>
+    </td>
+    <td align="center">
+      <a href="https://github.com/SenbaseelanV">
+        <strong>Senbaseelan V</strong>
+      </a><br/>
+    </td>
+    <td align="center">
+      <a href="https://github.com/TharunBabuV">
+        <strong>Tharun Babu V</strong>
+      </a><br/>
+    </td>
+    <td align="center">
+      <a href="https://github.com/SuprajaLakshmiB">
+        <strong>Supraja Lakshmi B</strong>
+      </a><br/>
+    </td>
+  </tr>
+</table>
+
 
 
 
