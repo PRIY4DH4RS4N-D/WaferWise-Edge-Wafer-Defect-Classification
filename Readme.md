@@ -150,7 +150,6 @@ flowchart LR
     D --> E[Validation<br/>82–85% Accuracy]
     E --> F[ONNX Export<br/>Edge-Ready Model]
 ```
-
 ---
 
 ## 🔹 Evaluation & Performance
@@ -158,17 +157,98 @@ flowchart LR
 Our MobileNetV3-Small based model was optimized for both accuracy and edge efficiency.  
 The evaluation results demonstrate strong generalization while maintaining extremely low model size and latency — making it ideal for real-time fab deployment.
 
+<div align="center">
+
 ### 📊 Model Performance Summary
 
-| Metric | Value |
-|--------|-------|
-| Test Accuracy | 83–85% |
-| Precision (Macro Avg) | ~0.84 |
-| Recall (Macro Avg) | ~0.83 |
-| F1-Score (Macro Avg) | ~0.83 |
-| Model Size (ONNX) | **293 KB** |
-| Inference Time | ~10 ms / image |
-| Framework | PyTorch → ONNX |
+<table>
+  <tr>
+    <th>Metric</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td>Test Accuracy</td>
+    <td>83–85%</td>
+  </tr>
+  <tr>
+    <td>Precision (Macro Avg)</td>
+    <td>~0.84</td>
+  </tr>
+  <tr>
+    <td>Recall (Macro Avg)</td>
+    <td>~0.83</td>
+  </tr>
+  <tr>
+    <td>F1-Score (Macro Avg)</td>
+    <td>~0.83</td>
+  </tr>
+  <tr>
+    <td>Model Size (ONNX)</td>
+    <td><b>293 KB</b></td>
+  </tr>
+  <tr>
+    <td>Inference Time</td>
+    <td>~10 ms / image</td>
+  </tr>
+  <tr>
+    <td>Framework</td>
+    <td>PyTorch → ONNX</td>
+  </tr>
+</table>
+
+</div>
+
+### 🧪 Model Evaluation Visuals
+<table align="center" border="1" cellpadding="10" cellspacing="0">
+
+  <!-- Row 1 -->
+  <tr>
+    <th align="center">Training Accuracy</th>
+    <th align="center">Training Loss</th>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="proof_images/1.jpeg" width="380"/>
+    </td>
+    <td align="center">
+      <img src="proof_images/2.jpeg" width="380"/>
+    </td>
+  </tr>
+
+  <!-- Row 2 -->
+  <tr>
+    <th align="center">Confusion Matrix</th>
+    <th align="center">F1 Score</th>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="proof_images/3.jpeg" width="380"/>
+    </td>
+    <td align="center">
+      <img src="proof_images/4.jpeg" width="380"/>
+    </td>
+  </tr>
+
+  <!-- Row 3 -->
+  <tr>
+    <th align="center">ROC Curve</th>
+    <th align="center">Model Size Comparison</th>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="proof_images/5.jpeg" width="380"/>
+    </td>
+    <td align="center">
+      <img src="proof_images/6.jpeg" width="380"/>
+    </td>
+  </tr>
+  
+<div align="center">
+  <img src="proof_images/7.jpeg" width="850"/>
+</div>
+
+</table>
+
 
 ### 📈 Observations
 
@@ -231,6 +311,7 @@ By combining accuracy with ultra-lightweight deployment, the system supports Ind
     </td>
   </tr>
 </table>
+
 
 
 
