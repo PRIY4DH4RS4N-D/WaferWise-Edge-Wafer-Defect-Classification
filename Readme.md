@@ -165,10 +165,11 @@ By combining accuracy with ultra-lightweight deployment, the system supports Ind
 ## Artifacts & Links
 
 - 📂 **Dataset (Train/Validation structured)**  
-  [Dataset Download Link]
+  [[Dataset Download Link](https://drive.google.com/drive/folders/1Atj94_75VKlZoFJyq0if6iPj1cTrWbvc?usp=sharing)]
 
 - 🧠 **Trained ONNX Model (~293 KB)**  
-  [ONNX Model Link]
+  [[ONNX Model Link](https://drive.google.com/drive/folders/1Atj94_75VKlZoFJyq0if6iPj1cTrWbvc?usp=sharing)]
 
 - 📊 **Evaluation Results (Confusion Matrix & Metrics)**  
   Included in repository under `/results`
+
