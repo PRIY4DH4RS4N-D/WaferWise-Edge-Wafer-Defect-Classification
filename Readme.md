@@ -199,6 +199,7 @@ The evaluation results demonstrate strong generalization while maintaining extre
 </div>
 
 ### 🧪 Model Evaluation Visuals
+
 <table align="center" border="1" cellpadding="10" cellspacing="0">
 
   <!-- Row 1 -->
@@ -311,6 +312,7 @@ By combining accuracy with ultra-lightweight deployment, the system supports Ind
     </td>
   </tr>
 </table>
+
 
 
 
