@@ -86,6 +86,7 @@ Applied controlled augmentations (rotation, mild blur)
 - Folder-based labeling for supervised learning
 
 - Ensured balanced class distribution
+
 ```mermaid
 flowchart TD
     A[Wafer Images] --> B[Classification]
@@ -200,16 +201,8 @@ By combining accuracy with ultra-lightweight deployment, the system supports Ind
 
 ---
 
-## Artifacts & Links
 
-- 📂 **Dataset (Train/Validation structured)**  
-  [[Dataset Download Link](
 
-- 🧠 **Trained ONNX Model (~293 KB)**  
-  [[ONNX Model Link](
-
-- 📊 **Evaluation Results (Confusion Matrix & Metrics)**  
-  Included in repository under `/results`
 
 
 
