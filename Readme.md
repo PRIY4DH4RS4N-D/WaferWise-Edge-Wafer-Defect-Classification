@@ -25,6 +25,8 @@
 
 - 📂 Dataset: [[Google Drive Link](https://drive.google.com/drive/folders/1jaYOw0kGByYc47ywAbBTTPccdnOv3Ki9?usp=drive_link)]
 - 🧠 ONNX Model (~293 KB): [[Drive Link](https://drive.google.com/file/d/1mVV39pQ_re-IcLTrn-lj6TT7kFtDbGKh/view?usp=drive_link)]
+- 📁 Complete Project Artifacts (Dataset + ONNX Model + Source Code)  
+  👉 [[Google Drive – Full Access Folder Link](https://drive.google.com/drive/folders/1Atj94_75VKlZoFJyq0if6iPj1cTrWbvc?usp=drive_link)]
 ---
 
 ## 📌 Project Overview
@@ -177,5 +179,6 @@ By combining accuracy with ultra-lightweight deployment, the system supports Ind
 
 - 📊 **Evaluation Results (Confusion Matrix & Metrics)**  
   Included in repository under `/results`
+
 
 
