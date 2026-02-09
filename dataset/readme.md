@@ -3,10 +3,11 @@
 This dataset is prepared for the **IESA DeepTech Hackathon 2026** under the problem statement  
 **Edge-AI Defect Classification for Semiconductor Images**.
 
-📂 Dataset: [[Google Drive Link](https://drive.google.com/drive/folders/1jaYOw0kGByYc47ywAbBTTPccdnOv3Ki9?usp=drive_link)]
+📂 **Dataset Link:**  
+🔗 https://drive.google.com/drive/folders/1jaYOw0kGByYc47ywAbBTTPccdnOv3Ki9
 
-The dataset consists of grayscale wafer/die inspection images curated to train
-a **lightweight, edge-deployable CNN** for real-time defect classification.
+The dataset contains grayscale wafer/die inspection images curated to train a  
+**lightweight, edge-deployable CNN** for real-time defect classification.
 
 ---
 
@@ -26,8 +27,13 @@ dataset/
 │   ├── via/
 │   └── others/
 ├── val/
+│   └── (same class folders as train)
+├── test/
     └── (same class folders as train)
 ```
+
+# 🧪 Defect Classes
+
 | Class               | Description                                                              |
 | ------------------- | ------------------------------------------------------------------------ |
 | **Clean**           | Defect-free wafer regions used as baseline reference                     |
@@ -36,10 +42,11 @@ dataset/
 | **Open**            | Broken or incomplete interconnects leading to open circuits              |
 | **LER**             | Line Edge Roughness affecting critical dimension control                 |
 | **Stain**           | Chemical residue or discoloration from processing steps                  |
-| **Crack**           | Structural cracks due to mechanical or thermal stress                    |
+| **Crack**           | Structural cracks caused by mechanical or thermal stress                 |
 | **Particle Contam** | Foreign particle contamination on wafer surface                          |
-| **Via**             | Blocked, missing, or malformed vias impacting vertical connections       |
-| **Others**          | Rare or unclassified defect patterns not belonging to above categories   |
+| **Via**             | Blocked, missing, or malformed vias impacting vertical interconnects     |
+| **Others**          | Rare, ambiguous, or unclassified defect patterns                         |
+
 
 ## 🎯 Why These 10 Classes Were Selected
 
@@ -87,3 +94,4 @@ This design helps the model:
 - Balance model accuracy, size, and latency
 
 - Reflect real fab inspection scenarios
+
