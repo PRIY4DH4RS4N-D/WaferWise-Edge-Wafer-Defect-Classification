@@ -24,6 +24,7 @@ This folder contains the inference pipeline used to test the trained wafer defec
 python test_onnx_model.py --image sample.png
 ```
 # 📊 Output
+
 <div align="center">
   <img src="proof_images/7.jpeg" width="850"/>
 </div>
