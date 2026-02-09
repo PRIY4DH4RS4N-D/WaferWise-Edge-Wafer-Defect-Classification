@@ -10,7 +10,7 @@
   
 <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&height=105&section=header&text=IESA%20Deeptech%20Hackathon%202026%20-%20Waferwise&fontSize=38&fontAlign=50&fontColor=000000" width="100%">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Mono&size=28&pause=1200&color=E65100&center=true&vCenter=true&width=900&lines=Data+%E2%9E%9E+MobileNetV3-Small+%E2%9E%9E+ONNX+%E2%9E%9E+Edge+AI;82%E2%80%9385%25%2B+Test+Accuracy+%7C+~10ms+Inference+%7C+Edge-Ready" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Mono&size=28&pause=1200&color=E65100&center=true&vCenter=true&width=900&lines=Data+%E2%9E%9E+MobileNetV3-Small+%E2%9E%9E+ONNX+%E2%9E%9E+Edge+AI;92%E2%80%9393%25%2B+Test+Accuracy+%7C+~10ms+Inference+%7C+Edge-Ready" />
 
 <p>
   <img src="https://img.shields.io/badge/MobileNetV3-Small%20CNN-ff9800?style=for-the-badge"/>
@@ -41,11 +41,11 @@
 
 Our project presents an Edge-AI based wafer defect classification system designed to perform real-time semiconductor inspection directly on edge devices.
 
-The solution leverages a lightweight MobileNetV3-Small CNN model trained on a custom dataset of wafer defect images across 10 classes (including Clean and Other).
+The solution leverages a lightweight MobileNetV3-Small CNN model trained on a custom dataset of wafer defect images across **10 classes** (including *Clean* and *Other*).
 
-The trained model is exported to ONNX format for compatibility with NXP eIQ deployment flow, ensuring portability, low latency (~10 ms inference), and compact model size (<1 MB).
+The trained model is exported to **ONNX format** for compatibility with the **NXP eIQ deployment flow**, ensuring portability, low latency (~10 ms inference), and an ultra-compact model size (~296 KB).
 
-The system addresses latency, bandwidth, and scalability limitations of centralized inspection by enabling efficient on-device AI inference suitable for Industry 4.0 manufacturing environments.
+The system addresses latency, bandwidth, and scalability limitations of centralized inspection by enabling efficient on-device AI inference suitable for **Industry 4.0 manufacturing environments**.
 
 ---
 
@@ -53,47 +53,57 @@ The system addresses latency, bandwidth, and scalability limitations of centrali
 
 Semiconductor fabrication generates massive volumes of inspection images daily. Traditional centralized or manual review systems face:
 
-High analysis latency
+- High analysis latency  
+- Heavy cloud / infrastructure dependency  
+- Bandwidth bottlenecks  
+- Poor scalability for real-time throughput  
 
-Heavy cloud/infrastructure dependency
-
-Bandwidth bottlenecks
-
-Poor scalability for real-time throughput
-
-There is a need for a lightweight, portable, and high-accuracy AI model capable of performing defect classification directly at the edge while maintaining compute efficiency
+There is a need for a **lightweight, portable, and high-accuracy AI model** capable of performing defect classification directly at the edge while maintaining compute efficiency.
 
 ---
 
 ## Dataset Strategy
 
-To meet hackathon requirements and ensure strong generalization, we built a custom wafer inspection dataset.
+To meet hackathon requirements and ensure strong generalization, we built a **custom wafer inspection dataset**.
 
 ### 📌 Data Collection
 
-- Collected wafer defect images from publicly available semiconductor datasets and research references
+- Collected wafer defect images from publicly available semiconductor datasets and research references  
+- Included **Clean, Other, and 8 distinct defect classes**  
+- Total dataset size: **~1,200+ images**  
+- Balanced class distribution maintained  
 
-- Included Clean, Other, and 8 distinct defect classes
+### 📌 Defect Classes (10)
 
-- Total dataset size: ~1,200+ images (well-balanced)
+- Clean  
+- Bridge  
+- CMP  
+- Open  
+- LER  
+- Stain  
+- Crack  
+- Particle_Contamination  
+- Via  
+- Other  
+
+**Other class includes:**  
+- Ambiguous defect patterns  
+- Edge-partial defects  
+- Image acquisition artifacts  
+*(introduced intentionally to improve robustness and reduce false positives)*
 
 ### 📌 Preprocessing
 
-- Converted all images to grayscale (single-channel)
-
-- Resized to 224 × 224
-
-- Stored in PNG format
-
-Applied controlled augmentations (rotation, mild blur)
+- Converted all images to **grayscale (single-channel)**  
+- Resized to **224 × 224**  
+- Stored in PNG format  
+- Applied controlled augmentations (rotation, mild blur)
 
 ### 📌 Dataset Structure
 
-- Dataset organized using structured class-wise directories for training and validation
-
-- Folder-based labeling for supervised learning
-
-- Ensured balanced class distribution
+- Folder-based labeling for supervised learning  
+- Separate **Train / Validation / Test** directories  
+- **Test set:** 180 images (18 images × 10 classes)  
 
 ```mermaid
 flowchart TD
@@ -127,167 +137,87 @@ flowchart TD
     style F8 fill:#ff6666,stroke:#333,color:#000
 
 ```
----
 
 ## Model Development
-
 ### 📌 Architecture Selection
 
-- Selected MobileNetV3-Small for lightweight edge-friendly design  
-- Suitable for low-latency and small memory footprint  
-- Transfer learning used for faster convergence  
+- Selected MobileNetV3-Small for edge-friendly deployment
+
+- Optimized for low latency and minimal memory footprint
+
+- Transfer learning used for faster convergence
 
 ### 📌 Training Setup
 
-- Implemented using PyTorch  
-- Multi-class classification (10 classes)  
-- Trained with optimizer and cross-entropy loss  
-- Batch size: 16 | Epochs: 30  
+- Framework: PyTorch
+
+- Multi-class classification (10 classes)
+
+- Loss: Cross-Entropy
+
+- Batch size: 16
+
+- Epochs: up to 50 (early stopping enabled)
 
 ### 📌 Performance Monitoring
 
-- Tracked training & validation accuracy  
-- Monitored loss for stability  
-- Generated confusion matrix for class-level evaluation
+- Tracked training & validation accuracy
 
+- Early stopping to prevent overfitting
+
+- Generated classification report & confusion matrix
+
+Diagram
 ```mermaid
 flowchart LR
     A[Wafer Dataset<br/>~1200+ Images] --> B[Preprocessing<br/>Grayscale • 224x224 • Augmentation]
     B --> C[MobileNetV3-Small<br/>Transfer Learning]
-    C --> D[Training<br/>Batch Size 16 • 30 Epochs]
-    D --> E[Validation<br/>82–85% Accuracy]
+    C --> D[Training<br/>Batch Size 16 • Early Stopping]
+    D --> E[Test Evaluation<br/>92.22% Accuracy]
     E --> F[ONNX Export<br/>Edge-Ready Model]
 ```
----
 
 ## 🔹 Evaluation & Performance
 
-Our MobileNetV3-Small based model was optimized for both accuracy and edge efficiency.  
-The evaluation results demonstrate strong generalization while maintaining extremely low model size and latency — making it ideal for real-time fab deployment.
+The trained model demonstrates strong generalization while remaining highly efficient for edge deployment.
 
 <div align="center">
-
-### 📊 Model Performance Summary
-
-<table>
-  <tr>
-    <th>Metric</th>
-    <th>Value</th>
-  </tr>
-  <tr>
-    <td>Test Accuracy</td>
-    <td>83–85%</td>
-  </tr>
-  <tr>
-    <td>Precision (Macro Avg)</td>
-    <td>~0.84</td>
-  </tr>
-  <tr>
-    <td>Recall (Macro Avg)</td>
-    <td>~0.83</td>
-  </tr>
-  <tr>
-    <td>F1-Score (Macro Avg)</td>
-    <td>~0.83</td>
-  </tr>
-  <tr>
-    <td>Model Size (ONNX)</td>
-    <td><b>293 KB</b></td>
-  </tr>
-  <tr>
-    <td>Inference Time</td>
-    <td>~10 ms / image</td>
-  </tr>
-  <tr>
-    <td>Framework</td>
-    <td>PyTorch → ONNX</td>
-  </tr>
-</table>
-
-</div>
-
-### 🧪 Model Evaluation Visuals
+📊 Model Performance Summary
+<table> <tr> <th>Metric</th> <th>Value</th> </tr> <tr> <td>Best Training Accuracy</td> <td>98.93%</td> </tr> <tr> <td>Best Validation Accuracy</td> <td>97.22%</td> </tr> <tr> <td><b>Test Accuracy</b></td> <td><b>92.22%</b></td> </tr> <tr> <td>Precision (Macro Avg)</td> <td>~0.93</td> </tr> <tr> <td>Recall (Macro Avg)</td> <td>~0.92</td> </tr> <tr> <td>F1-Score (Macro Avg)</td> <td>~0.92</td> </tr> <tr> <td>Model Size (ONNX)</td> <td><b>~296 KB</b></td> </tr> <tr> <td>Inference Time</td> <td>~10 ms / image</td> </tr> <tr> <td>Framework</td> <td>PyTorch → ONNX</td> </tr> </table> </div>
+🧪 Model Evaluation Visuals
 <div align="center">
   <img src="proof_images/7.jpeg" width="850"/>
 </div>
 
+<table align="center"> <tr> <th>Training Accuracy</th> <th>Training Loss</th> </tr> <tr> <td><img src="proof_images/1.jpeg" width="380"/></td> <td><img src="proof_images/2.jpeg" width="380"/></td> </tr> <tr> <th>Confusion Matrix</th> <th>F1 Score</th> </tr> <tr> <td><img src="proof_images/3.jpeg" width="380"/></td> <td><img src="proof_images/4.jpeg" width="380"/></td> </tr> </table>
 
-<table align="center" border="1" cellpadding="10" cellspacing="0">
+## 📈 Observations
 
-  <!-- Row 1 -->
-  <tr>
-    <th align="center">Training Accuracy</th>
-    <th align="center">Training Loss</th>
-  </tr>
-  <tr>
-    <td align="center">
-      <img src="proof_images/1.jpeg" width="380"/>
-    </td>
-    <td align="center">
-      <img src="proof_images/2.jpeg" width="380"/>
-    </td>
-  </tr>
+- Strong class-wise separation across all defect categories
 
-  <!-- Row 2 -->
-  <tr>
-    <th align="center">Confusion Matrix</th>
-    <th align="center">F1 Score</th>
-  </tr>
-  <tr>
-    <td align="center">
-      <img src="proof_images/3.jpeg" width="380"/>
-    </td>
-    <td align="center">
-      <img src="proof_images/4.jpeg" width="380"/>
-    </td>
-  </tr>
+- Robust handling of ambiguous samples via Other class
 
-  <!-- Row 3 -->
-  <tr>
-    <th align="center">ROC Curve</th>
-    <th align="center">Model Size Comparison</th>
-  </tr>
-  <tr>
-    <td align="center">
-      <img src="proof_images/5.jpeg" width="380"/>
-    </td>
-    <td align="center">
-      <img src="proof_images/6.jpeg" width="380"/>
-    </td>
-  </tr>
-</table>
-
-
-### 📈 Observations
-
-- Confusion matrix shows strong separation across major defect categories.  
-- Lightweight model enables real-time inference under strict edge constraints.  
-- Extremely compact size (293 KB) ensures easy portability to NXP eIQ flows.
-
----
+- Ultra-lightweight model suitable for constrained edge devices
 
 ## 💡 Innovation
 
-- Lightweight MobileNetV3-Small architecture optimized for edge constraints  
-- Extremely compact model size (~293 KB) without sacrificing multi-class performance  
-- Designed for direct portability to NXP eIQ deployment flow  
-- Edge-first design eliminating dependency on centralized cloud infrastructure  
+- Edge-first design using MobileNetV3-Small
 
----
+- Ultra-compact ONNX model (~296 KB)
+
+- Explicit handling of ambiguous & artifact samples
+
+- Designed for direct NXP eIQ portability
 
 ## 🌍 Impact
 
-This solution enables faster and more reliable semiconductor defect inspection by shifting intelligence directly to the edge.
+- Enables near real-time wafer inspection (~10 ms/image)
 
-- Reduces manual inspection dependency and human error  
-- Enables near real-time wafer analysis (~10 ms/image)  
-- Eliminates heavy cloud bandwidth requirements  
-- Scales easily across multiple inspection stations  
-- Low model size (~293 KB) minimizes hardware cost and memory usage  
+- Reduces dependency on centralized cloud analysis
 
-By combining accuracy with ultra-lightweight deployment, the system supports Industry 4.0 manufacturing environments with practical, scalable AI.
+- Low memory footprint reduces hardware cost
 
----
+- Scales efficiently across multiple inspection stations
 
 ## 👥 Team
 
