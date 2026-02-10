@@ -25,7 +25,7 @@
 
 - 📂 Dataset: [[Google Drive Link](https://drive.google.com/drive/folders/1jaYOw0kGByYc47ywAbBTTPccdnOv3Ki9?usp=drive_link)]
 - 📑 PPT: [[Google Drive Link](https://drive.google.com/file/d/1q_TquLvIevf3mTWr_Gd48OwOVsYcOpSR/view?usp=drive_link)]
-- 🧠 ONNX Model (~293 KB): [[Drive Link](https://drive.google.com/file/d/1mVV39pQ_re-IcLTrn-lj6TT7kFtDbGKh/view?usp=drive_link)]
+- 🧠 ONNX Model (~296 KB): [[Drive Link](https://drive.google.com/file/d/15NekyDIW1DynYvXeG4r0PqwJ2g4dq3vP/view?usp=drive_link)]
 - 📁 Complete Project Artifacts (Dataset + ONNX Model + Source Code)  
   👉 [[Google Drive – Full Access Folder Link](https://drive.google.com/drive/folders/1Atj94_75VKlZoFJyq0if6iPj1cTrWbvc?usp=drive_link)]
 - 📊 **Dataset**
@@ -254,6 +254,7 @@ The trained model demonstrates strong generalization while remaining highly effi
     </td>
   </tr>
 </table>
+
 
 
 
