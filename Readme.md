@@ -32,6 +32,7 @@
   - [`dataset/`](./dataset) – Dataset description, class definitions, and download links
 - 🏋️ **Model Training**
   - [`training/`](./training) – PyTorch training pipeline for MobileNetV3-Small
+-    **Model Graph** [[Google Drive Link](https://drive.google.com/file/d/19aqrUpRzWng95ilgWcB5JqX_Id4UYDle/view?usp=drive_link)]
 - 🧠 **Trained Models**
   - [`models/`](./models) – Trained `.pth` and `.onnx` model artifacts
 - ⚡ **Edge Inference**
@@ -254,6 +255,7 @@ The trained model demonstrates strong generalization while remaining highly effi
     </td>
   </tr>
 </table>
+
 
 
 
