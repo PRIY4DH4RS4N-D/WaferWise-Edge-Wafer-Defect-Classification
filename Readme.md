@@ -189,15 +189,19 @@ The trained model demonstrates strong generalization while remaining highly effi
   <img src="proof_images/7.jpeg" width="850"/>
 </div>
 
-<table align="center"> <tr> <th>Training Accuracy</th> <th>Training Loss</th> </tr> <tr> <td><img src="proof_images/1.jpeg" width="380"/></td> <td><img src="proof_images/2.jpeg" width="380"/></td> </tr> <tr> <th>Confusion Matrix</th> <th>F1 Score</th> </tr> <tr> <td><img src="proof_images/3.jpeg" width="380"/></td> <td><img src="proof_images/4.jpeg" width="380"/></td> </tr> </table>
+<table align="center"> <tr> <th>Training Accuracy</th> <th>Training Loss</th> </tr> <tr> <td><img src="proof_images/1.jpeg" width="380"/></td> <td><img src="proof_images/2.jpeg" width="380"/></td> </tr> <tr> <th>Confusion Matrix</th> <th>F1 Score</th> </tr> <tr> <td><img src="proof_images/3.jpeg" width="380"/></td> <td><img src="proof_images/4.jpeg" width="380"/></td> </tr> <tr> <tr> <th>ROC Curve</th> <th>Model Size</th> </tr> <td><img src="proof_images/5.jpeg" width="380"/></td> <td><img src="proof_images/6.jpeg" width="380"/></td> </tr> </table>
 
 ## 📈 Observations
+
 
 - Strong class-wise separation across all defect categories
 
 - Robust handling of ambiguous samples via Other class
 
 - Ultra-lightweight model suitable for constrained edge devices
+<div align="center">
+  <img src="proof_images/9.jpeg" width="850"/>
+</div>
 
 ## 💡 Innovation
 
@@ -249,6 +253,7 @@ The trained model demonstrates strong generalization while remaining highly effi
     </td>
   </tr>
 </table>
+
 
 
 
