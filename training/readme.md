@@ -143,6 +143,10 @@ Per-class precision, recall, and F1-score
 
 Confusion matrix on test set
 
+<div align="center">
+  <img src="../proof_images/8.jpeg" width="850"/>
+</div>
+
 ## 💾 Step 8: Generated Model Artifacts
 After successful execution, the following files are generated inside outputs/:
 
