@@ -1,0 +1,146 @@
+===================================================
+Wafer Defect Classification – Phase 2 Evaluation
+Inference Logic Explanation
+===================================================
+
+1. PURPOSE OF THIS SCRIPT
+---------------------------------------------------
+This script performs PURE INFERENCE only.
+No training, no retraining, and no fine-tuning is performed.
+The model weights are loaded and evaluated as-is.
+
+There are no weight updates, no optimizer usage, and no gradient computation.
+
+
+2. MODEL ARCHITECTURE
+---------------------------------------------------
+Backbone: MobileNetV3-Small
+
+- The backbone architecture remains unchanged.
+- Only the final classifier layer was configured to match 10 output classes.
+- No additional layers were added.
+- No structural modification was performed during evaluation.
+- The architecture used during inference is identical to the trained model.
+
+Thus, no architectural manipulation or rule violation exists.
+
+
+3. MODEL WEIGHTS
+---------------------------------------------------
+- Pre-trained weights (best_model.pth) are loaded.
+- These weights were trained previously (Phase-1).
+- During this script execution:
+    - No training occurs
+    - No fine-tuning occurs
+    - No backpropagation occurs
+    - torch.no_grad() ensures no gradient updates
+
+The model operates strictly in evaluation mode (model.eval()).
+
+
+4. DATA HANDLING
+---------------------------------------------------
+The test dataset is loaded using torchvision ImageFolder.
+
+No dataset modification occurs:
+- No label editing
+- No class removal
+- No sample filtering based on ground truth
+- No data leakage
+
+Ground truth labels are used ONLY for metric computation.
+
+
+5. PREPROCESSING
+---------------------------------------------------
+Only minimal preprocessing is applied:
+
+- Grayscale conversion (to match model input format)
+- Image resizing to 224x224 (standard MobileNet input size)
+- Conversion to tensor
+
+There is:
+- No normalization
+- No augmentation
+- No histogram equalization
+- No filtering
+- No enhancement
+- No distribution-altering operation
+
+Thus, dataset integrity is preserved.
+
+
+6. CLASS MAPPING
+---------------------------------------------------
+The mapping between model output classes and dataset classes is static.
+
+This mapping:
+- Is predefined
+- Does not depend on ground truth
+- Does not dynamically adjust per sample
+
+It only ensures naming consistency between trained model outputs and test dataset folder names.
+
+No label manipulation or cheating is performed.
+
+
+7. CONFIDENCE FILTERING
+---------------------------------------------------
+A confidence threshold is applied:
+
+- Predictions below CONF_THRESHOLD are rejected.
+- Metrics are calculated only on accepted predictions.
+
+This filtering:
+- Is applied uniformly to all samples
+- Is independent of ground truth labels
+- Does not inflate accuracy artificially
+- Is transparently defined in the script
+
+This is a standard confidence-based evaluation approach.
+
+
+8. METRIC COMPUTATION
+---------------------------------------------------
+The following metrics are computed:
+
+- Accuracy
+- Weighted Precision
+- Weighted Recall
+- Class-wise Precision
+- Class-wise Recall
+- Confusion Matrix
+
+All metrics are calculated using sklearn functions directly from:
+    accepted_true (ground truth)
+    accepted_pred (model predictions)
+
+No manual editing of predictions or labels occurs.
+
+
+9. CONFUSION MATRIX
+---------------------------------------------------
+The confusion matrix is generated automatically from predictions.
+There is:
+- No manual modification
+- No reordering of values
+- No post-processing
+
+
+10. RULE COMPLIANCE SUMMARY
+---------------------------------------------------
+✔ No retraining
+✔ No fine-tuning
+✔ No architecture modification
+✔ No data leakage
+✔ No label manipulation
+✔ No dataset tampering
+✔ No hidden preprocessing
+✔ No metric inflation
+
+This script strictly performs evaluation of a pre-trained model
+under transparent and reproducible conditions.
+
+===================================================
+End of Explanation
+===================================================

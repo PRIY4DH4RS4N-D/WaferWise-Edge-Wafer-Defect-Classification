@@ -1,0 +1,352 @@
+
+===================================================
+ Project : Wafer Defect Classification
+ Module  : Confidence-Based Model Testing
+ Model   : MobileNetV3-Small
+===================================================
+
+================ IMAGE-WISE RESULTS ================
+
+Image 0001 | Actual: Bridge     | Predicted: Bridge     | Confidence:  99.60% | Decision: ACCEPT
+Image 0002 | Actual: Bridge     | Predicted: Bridge     | Confidence:  99.86% | Decision: ACCEPT
+Image 0003 | Actual: Bridge     | Predicted: Bridge     | Confidence:  99.65% | Decision: ACCEPT
+Image 0004 | Actual: Bridge     | Predicted: Open       | Confidence:  81.28% | Decision: ACCEPT
+Image 0005 | Actual: Bridge     | Predicted: Bridge     | Confidence:  99.98% | Decision: ACCEPT
+Image 0006 | Actual: Bridge     | Predicted: Clean      | Confidence:  98.49% | Decision: ACCEPT
+Image 0007 | Actual: Bridge     | Predicted: LER        | Confidence:  57.23% | Decision: REJECT
+Image 0008 | Actual: Bridge     | Predicted: Clean      | Confidence:  87.79% | Decision: ACCEPT
+Image 0009 | Actual: Bridge     | Predicted: Bridge     | Confidence:  84.88% | Decision: ACCEPT
+Image 0010 | Actual: Bridge     | Predicted: CMP        | Confidence:  32.66% | Decision: REJECT
+Image 0011 | Actual: Bridge     | Predicted: Bridge     | Confidence:  99.76% | Decision: ACCEPT
+Image 0012 | Actual: Bridge     | Predicted: Bridge     | Confidence:  98.90% | Decision: ACCEPT
+Image 0013 | Actual: Bridge     | Predicted: Bridge     | Confidence:  99.12% | Decision: ACCEPT
+Image 0014 | Actual: Bridge     | Predicted: Open       | Confidence:  98.71% | Decision: ACCEPT
+Image 0015 | Actual: Bridge     | Predicted: Bridge     | Confidence:  99.98% | Decision: ACCEPT
+Image 0016 | Actual: Bridge     | Predicted: Bridge     | Confidence:  99.63% | Decision: ACCEPT
+Image 0017 | Actual: Bridge     | Predicted: Bridge     | Confidence:  99.95% | Decision: ACCEPT
+Image 0018 | Actual: Bridge     | Predicted: Bridge     | Confidence:  98.86% | Decision: ACCEPT
+Image 0019 | Actual: Bridge     | Predicted: Bridge     | Confidence:  93.95% | Decision: ACCEPT
+Image 0020 | Actual: Bridge     | Predicted: VIA        | Confidence:  99.18% | Decision: ACCEPT
+Image 0021 | Actual: Bridge     | Predicted: Bridge     | Confidence:  99.35% | Decision: ACCEPT
+Image 0022 | Actual: Bridge     | Predicted: Bridge     | Confidence:  99.94% | Decision: ACCEPT
+Image 0023 | Actual: Bridge     | Predicted: Open       | Confidence:  81.03% | Decision: ACCEPT
+Image 0024 | Actual: Bridge     | Predicted: Clean      | Confidence:  97.25% | Decision: ACCEPT
+Image 0025 | Actual: Bridge     | Predicted: Bridge     | Confidence:  91.34% | Decision: ACCEPT
+Image 0026 | Actual: Bridge     | Predicted: VIA        | Confidence:  93.44% | Decision: ACCEPT
+Image 0027 | Actual: Bridge     | Predicted: Bridge     | Confidence:  95.84% | Decision: ACCEPT
+Image 0028 | Actual: Bridge     | Predicted: Bridge     | Confidence:  98.76% | Decision: ACCEPT
+Image 0029 | Actual: Bridge     | Predicted: VIA        | Confidence:  40.12% | Decision: REJECT
+Image 0030 | Actual: Bridge     | Predicted: Bridge     | Confidence:  99.89% | Decision: ACCEPT
+Image 0031 | Actual: Bridge     | Predicted: Bridge     | Confidence: 100.00% | Decision: ACCEPT
+Image 0032 | Actual: Bridge     | Predicted: Open       | Confidence:  69.74% | Decision: ACCEPT
+Image 0033 | Actual: CMP        | Predicted: CMP        | Confidence:  99.64% | Decision: ACCEPT
+Image 0034 | Actual: CMP        | Predicted: CMP        | Confidence:  83.37% | Decision: ACCEPT
+Image 0035 | Actual: CMP        | Predicted: CMP        | Confidence:  78.80% | Decision: ACCEPT
+Image 0036 | Actual: CMP        | Predicted: CMP        | Confidence:  99.90% | Decision: ACCEPT
+Image 0037 | Actual: CMP        | Predicted: CMP        | Confidence:  98.56% | Decision: ACCEPT
+Image 0038 | Actual: CMP        | Predicted: Particle   | Confidence:  83.39% | Decision: ACCEPT
+Image 0039 | Actual: CMP        | Predicted: CMP        | Confidence:  80.27% | Decision: ACCEPT
+Image 0040 | Actual: CMP        | Predicted: CMP        | Confidence:  99.41% | Decision: ACCEPT
+Image 0041 | Actual: CMP        | Predicted: CMP        | Confidence:  97.21% | Decision: ACCEPT
+Image 0042 | Actual: CMP        | Predicted: CMP        | Confidence:  97.53% | Decision: ACCEPT
+Image 0043 | Actual: CMP        | Predicted: CMP        | Confidence:  99.63% | Decision: ACCEPT
+Image 0044 | Actual: CMP        | Predicted: CMP        | Confidence:  99.96% | Decision: ACCEPT
+Image 0045 | Actual: CMP        | Predicted: Open       | Confidence:  92.97% | Decision: ACCEPT
+Image 0046 | Actual: CMP        | Predicted: VIA        | Confidence:  38.96% | Decision: REJECT
+Image 0047 | Actual: CMP        | Predicted: CMP        | Confidence:  99.93% | Decision: ACCEPT
+Image 0048 | Actual: CMP        | Predicted: Clean      | Confidence:  73.60% | Decision: ACCEPT
+Image 0049 | Actual: CMP        | Predicted: CMP        | Confidence:  56.45% | Decision: REJECT
+Image 0050 | Actual: CMP        | Predicted: CMP        | Confidence:  53.02% | Decision: REJECT
+Image 0051 | Actual: CMP        | Predicted: CMP        | Confidence:  92.42% | Decision: ACCEPT
+Image 0052 | Actual: CMP        | Predicted: CMP        | Confidence:  95.47% | Decision: ACCEPT
+Image 0053 | Actual: CMP        | Predicted: CMP        | Confidence:  54.69% | Decision: REJECT
+Image 0054 | Actual: CMP        | Predicted: Open       | Confidence:  82.33% | Decision: ACCEPT
+Image 0055 | Actual: CMP        | Predicted: Bridge     | Confidence:  92.47% | Decision: ACCEPT
+Image 0056 | Actual: CMP        | Predicted: CMP        | Confidence:  98.89% | Decision: ACCEPT
+Image 0057 | Actual: CMP        | Predicted: Open       | Confidence:  50.59% | Decision: REJECT
+Image 0058 | Actual: CMP        | Predicted: VIA        | Confidence:  99.24% | Decision: ACCEPT
+Image 0059 | Actual: CMP        | Predicted: Open       | Confidence:  96.86% | Decision: ACCEPT
+Image 0060 | Actual: CMP        | Predicted: CMP        | Confidence:  97.42% | Decision: ACCEPT
+Image 0061 | Actual: CMP        | Predicted: CMP        | Confidence:  99.99% | Decision: ACCEPT
+Image 0062 | Actual: CMP        | Predicted: CMP        | Confidence:  74.87% | Decision: ACCEPT
+Image 0063 | Actual: Clean      | Predicted: VIA        | Confidence:  99.89% | Decision: ACCEPT
+Image 0064 | Actual: Clean      | Predicted: VIA        | Confidence:  96.09% | Decision: ACCEPT
+Image 0065 | Actual: Clean      | Predicted: Clean      | Confidence:  98.87% | Decision: ACCEPT
+Image 0066 | Actual: Clean      | Predicted: Clean      | Confidence:  99.74% | Decision: ACCEPT
+Image 0067 | Actual: Clean      | Predicted: VIA        | Confidence:  66.71% | Decision: ACCEPT
+Image 0068 | Actual: Clean      | Predicted: Clean      | Confidence:  99.50% | Decision: ACCEPT
+Image 0069 | Actual: Clean      | Predicted: Clean      | Confidence:  84.38% | Decision: ACCEPT
+Image 0070 | Actual: Clean      | Predicted: Clean      | Confidence:  98.74% | Decision: ACCEPT
+Image 0071 | Actual: Clean      | Predicted: Clean      | Confidence:  99.71% | Decision: ACCEPT
+Image 0072 | Actual: Clean      | Predicted: Clean      | Confidence:  72.26% | Decision: ACCEPT
+Image 0073 | Actual: Clean      | Predicted: Clean      | Confidence:  99.78% | Decision: ACCEPT
+Image 0074 | Actual: Clean      | Predicted: VIA        | Confidence:  67.86% | Decision: ACCEPT
+Image 0075 | Actual: Clean      | Predicted: Clean      | Confidence:  98.78% | Decision: ACCEPT
+Image 0076 | Actual: Clean      | Predicted: LER        | Confidence:  75.40% | Decision: ACCEPT
+Image 0077 | Actual: Clean      | Predicted: Bridge     | Confidence:  99.73% | Decision: ACCEPT
+Image 0078 | Actual: Clean      | Predicted: Clean      | Confidence:  99.65% | Decision: ACCEPT
+Image 0079 | Actual: Clean      | Predicted: Clean      | Confidence:  96.50% | Decision: ACCEPT
+Image 0080 | Actual: Clean      | Predicted: Clean      | Confidence:  76.29% | Decision: ACCEPT
+Image 0081 | Actual: Clean      | Predicted: CMP        | Confidence:  31.21% | Decision: REJECT
+Image 0082 | Actual: Clean      | Predicted: Clean      | Confidence:  98.72% | Decision: ACCEPT
+Image 0083 | Actual: Clean      | Predicted: Clean      | Confidence:  99.97% | Decision: ACCEPT
+Image 0084 | Actual: Clean      | Predicted: Bridge     | Confidence:  79.54% | Decision: ACCEPT
+Image 0085 | Actual: Clean      | Predicted: VIA        | Confidence:  80.30% | Decision: ACCEPT
+Image 0086 | Actual: Clean      | Predicted: LER        | Confidence:  57.89% | Decision: REJECT
+Image 0087 | Actual: Clean      | Predicted: Other      | Confidence:  94.20% | Decision: ACCEPT
+Image 0088 | Actual: Clean      | Predicted: Clean      | Confidence:  99.97% | Decision: ACCEPT
+Image 0089 | Actual: Clean      | Predicted: VIA        | Confidence:  99.82% | Decision: ACCEPT
+Image 0090 | Actual: Clean      | Predicted: VIA        | Confidence:  79.69% | Decision: ACCEPT
+Image 0091 | Actual: Clean      | Predicted: Clean      | Confidence:  72.27% | Decision: ACCEPT
+Image 0092 | Actual: Clean      | Predicted: VIA        | Confidence:  99.82% | Decision: ACCEPT
+Image 0093 | Actual: Clean      | Predicted: VIA        | Confidence:  49.78% | Decision: REJECT
+Image 0094 | Actual: Clean      | Predicted: Bridge     | Confidence:  54.16% | Decision: REJECT
+Image 0095 | Actual: Clean      | Predicted: VIA        | Confidence:  99.74% | Decision: ACCEPT
+Image 0096 | Actual: Crack      | Predicted: Crack      | Confidence:  99.66% | Decision: ACCEPT
+Image 0097 | Actual: Crack      | Predicted: VIA        | Confidence:  57.43% | Decision: REJECT
+Image 0098 | Actual: Crack      | Predicted: Crack      | Confidence:  48.41% | Decision: REJECT
+Image 0099 | Actual: Crack      | Predicted: VIA        | Confidence:  50.52% | Decision: REJECT
+Image 0100 | Actual: Crack      | Predicted: Crack      | Confidence:  99.97% | Decision: ACCEPT
+Image 0101 | Actual: Crack      | Predicted: Crack      | Confidence:  99.97% | Decision: ACCEPT
+Image 0102 | Actual: Crack      | Predicted: Crack      | Confidence:  96.69% | Decision: ACCEPT
+Image 0103 | Actual: Crack      | Predicted: Crack      | Confidence:  99.95% | Decision: ACCEPT
+Image 0104 | Actual: Crack      | Predicted: Crack      | Confidence:  99.96% | Decision: ACCEPT
+Image 0105 | Actual: Crack      | Predicted: Crack      | Confidence:  99.82% | Decision: ACCEPT
+Image 0106 | Actual: Crack      | Predicted: Clean      | Confidence:  49.30% | Decision: REJECT
+Image 0107 | Actual: Crack      | Predicted: Clean      | Confidence:  46.21% | Decision: REJECT
+Image 0108 | Actual: Crack      | Predicted: Clean      | Confidence:  71.23% | Decision: ACCEPT
+Image 0109 | Actual: Crack      | Predicted: Crack      | Confidence:  99.96% | Decision: ACCEPT
+Image 0110 | Actual: Crack      | Predicted: Clean      | Confidence:  92.57% | Decision: ACCEPT
+Image 0111 | Actual: Crack      | Predicted: Crack      | Confidence:  57.86% | Decision: REJECT
+Image 0112 | Actual: Crack      | Predicted: Clean      | Confidence:  97.84% | Decision: ACCEPT
+Image 0113 | Actual: Crack      | Predicted: Crack      | Confidence:  99.73% | Decision: ACCEPT
+Image 0114 | Actual: Crack      | Predicted: Other      | Confidence:  87.27% | Decision: ACCEPT
+Image 0115 | Actual: Crack      | Predicted: Crack      | Confidence:  98.04% | Decision: ACCEPT
+Image 0116 | Actual: Crack      | Predicted: VIA        | Confidence:  73.61% | Decision: ACCEPT
+Image 0117 | Actual: Crack      | Predicted: Crack      | Confidence:  80.18% | Decision: ACCEPT
+Image 0118 | Actual: Crack      | Predicted: Crack      | Confidence:  81.23% | Decision: ACCEPT
+Image 0119 | Actual: Crack      | Predicted: Clean      | Confidence:  89.93% | Decision: ACCEPT
+Image 0120 | Actual: Crack      | Predicted: Other      | Confidence:  43.03% | Decision: REJECT
+Image 0121 | Actual: Crack      | Predicted: Clean      | Confidence:  98.11% | Decision: ACCEPT
+Image 0122 | Actual: Crack      | Predicted: VIA        | Confidence:  38.65% | Decision: REJECT
+Image 0123 | Actual: Crack      | Predicted: Crack      | Confidence:  85.19% | Decision: ACCEPT
+Image 0124 | Actual: Crack      | Predicted: Clean      | Confidence:  99.45% | Decision: ACCEPT
+Image 0125 | Actual: Crack      | Predicted: Other      | Confidence:  80.63% | Decision: ACCEPT
+Image 0126 | Actual: Crack      | Predicted: Crack      | Confidence:  99.95% | Decision: ACCEPT
+Image 0127 | Actual: LER        | Predicted: LER        | Confidence:  67.41% | Decision: ACCEPT
+Image 0128 | Actual: LER        | Predicted: LER        | Confidence:  99.98% | Decision: ACCEPT
+Image 0129 | Actual: LER        | Predicted: Open       | Confidence:  73.79% | Decision: ACCEPT
+Image 0130 | Actual: LER        | Predicted: LER        | Confidence:  49.13% | Decision: REJECT
+Image 0131 | Actual: LER        | Predicted: LER        | Confidence:  65.25% | Decision: ACCEPT
+Image 0132 | Actual: LER        | Predicted: Bridge     | Confidence:  82.96% | Decision: ACCEPT
+Image 0133 | Actual: LER        | Predicted: LER        | Confidence:  99.77% | Decision: ACCEPT
+Image 0134 | Actual: LER        | Predicted: LER        | Confidence:  71.30% | Decision: ACCEPT
+Image 0135 | Actual: LER        | Predicted: LER        | Confidence:  98.47% | Decision: ACCEPT
+Image 0136 | Actual: LER        | Predicted: LER        | Confidence:  99.99% | Decision: ACCEPT
+Image 0137 | Actual: LER        | Predicted: LER        | Confidence:  66.04% | Decision: ACCEPT
+Image 0138 | Actual: LER        | Predicted: LER        | Confidence:  99.93% | Decision: ACCEPT
+Image 0139 | Actual: LER        | Predicted: LER        | Confidence:  99.94% | Decision: ACCEPT
+Image 0140 | Actual: LER        | Predicted: Clean      | Confidence:  97.31% | Decision: ACCEPT
+Image 0141 | Actual: LER        | Predicted: Clean      | Confidence:  90.93% | Decision: ACCEPT
+Image 0142 | Actual: LER        | Predicted: LER        | Confidence:  99.95% | Decision: ACCEPT
+Image 0143 | Actual: LER        | Predicted: Bridge     | Confidence:  87.93% | Decision: ACCEPT
+Image 0144 | Actual: LER        | Predicted: Bridge     | Confidence:  64.47% | Decision: ACCEPT
+Image 0145 | Actual: LER        | Predicted: Bridge     | Confidence:  62.18% | Decision: ACCEPT
+Image 0146 | Actual: LER        | Predicted: Bridge     | Confidence:  76.98% | Decision: ACCEPT
+Image 0147 | Actual: LER        | Predicted: Bridge     | Confidence:  92.66% | Decision: ACCEPT
+Image 0148 | Actual: LER        | Predicted: LER        | Confidence:  99.99% | Decision: ACCEPT
+Image 0149 | Actual: LER        | Predicted: LER        | Confidence:  59.10% | Decision: REJECT
+Image 0150 | Actual: LER        | Predicted: LER        | Confidence:  80.19% | Decision: ACCEPT
+Image 0151 | Actual: LER        | Predicted: LER        | Confidence:  99.65% | Decision: ACCEPT
+Image 0152 | Actual: LER        | Predicted: Bridge     | Confidence:  73.79% | Decision: ACCEPT
+Image 0153 | Actual: LER        | Predicted: Bridge     | Confidence:  92.05% | Decision: ACCEPT
+Image 0154 | Actual: LER        | Predicted: Clean      | Confidence:  75.16% | Decision: ACCEPT
+Image 0155 | Actual: LER        | Predicted: LER        | Confidence:  99.99% | Decision: ACCEPT
+Image 0156 | Actual: LER        | Predicted: Clean      | Confidence:  80.10% | Decision: ACCEPT
+Image 0157 | Actual: Open       | Predicted: Open       | Confidence:  59.33% | Decision: REJECT
+Image 0158 | Actual: Open       | Predicted: Open       | Confidence:  96.88% | Decision: ACCEPT
+Image 0159 | Actual: Open       | Predicted: Bridge     | Confidence:  97.07% | Decision: ACCEPT
+Image 0160 | Actual: Open       | Predicted: Clean      | Confidence:  92.89% | Decision: ACCEPT
+Image 0161 | Actual: Open       | Predicted: Bridge     | Confidence:  92.57% | Decision: ACCEPT
+Image 0162 | Actual: Open       | Predicted: Open       | Confidence:  75.97% | Decision: ACCEPT
+Image 0163 | Actual: Open       | Predicted: Clean      | Confidence:  98.31% | Decision: ACCEPT
+Image 0164 | Actual: Open       | Predicted: Open       | Confidence:  91.89% | Decision: ACCEPT
+Image 0165 | Actual: Open       | Predicted: CMP        | Confidence:  45.00% | Decision: REJECT
+Image 0166 | Actual: Open       | Predicted: Particle   | Confidence:  81.54% | Decision: ACCEPT
+Image 0167 | Actual: Open       | Predicted: Open       | Confidence:  97.74% | Decision: ACCEPT
+Image 0168 | Actual: Open       | Predicted: Bridge     | Confidence:  68.80% | Decision: ACCEPT
+Image 0169 | Actual: Open       | Predicted: Open       | Confidence:  99.41% | Decision: ACCEPT
+Image 0170 | Actual: Open       | Predicted: Open       | Confidence:  99.94% | Decision: ACCEPT
+Image 0171 | Actual: Open       | Predicted: Open       | Confidence:  85.76% | Decision: ACCEPT
+Image 0172 | Actual: Open       | Predicted: Open       | Confidence:  99.96% | Decision: ACCEPT
+Image 0173 | Actual: Open       | Predicted: Open       | Confidence:  94.83% | Decision: ACCEPT
+Image 0174 | Actual: Open       | Predicted: Clean      | Confidence:  85.37% | Decision: ACCEPT
+Image 0175 | Actual: Open       | Predicted: Open       | Confidence:  99.02% | Decision: ACCEPT
+Image 0176 | Actual: Open       | Predicted: Open       | Confidence:  94.96% | Decision: ACCEPT
+Image 0177 | Actual: Open       | Predicted: Clean      | Confidence:  90.38% | Decision: ACCEPT
+Image 0178 | Actual: Open       | Predicted: Bridge     | Confidence:  59.21% | Decision: REJECT
+Image 0179 | Actual: Open       | Predicted: LER        | Confidence:  48.98% | Decision: REJECT
+Image 0180 | Actual: Open       | Predicted: Open       | Confidence:  99.83% | Decision: ACCEPT
+Image 0181 | Actual: Open       | Predicted: Open       | Confidence:  99.94% | Decision: ACCEPT
+Image 0182 | Actual: Open       | Predicted: Open       | Confidence:  75.71% | Decision: ACCEPT
+Image 0183 | Actual: Open       | Predicted: Bridge     | Confidence:  95.37% | Decision: ACCEPT
+Image 0184 | Actual: Open       | Predicted: Open       | Confidence:  77.40% | Decision: ACCEPT
+Image 0185 | Actual: Open       | Predicted: Open       | Confidence:  99.75% | Decision: ACCEPT
+Image 0186 | Actual: Open       | Predicted: Clean      | Confidence:  66.01% | Decision: ACCEPT
+Image 0187 | Actual: Other      | Predicted: CMP        | Confidence:  99.14% | Decision: ACCEPT
+Image 0188 | Actual: Other      | Predicted: Clean      | Confidence:  31.62% | Decision: REJECT
+Image 0189 | Actual: Other      | Predicted: LER        | Confidence: 100.00% | Decision: ACCEPT
+Image 0190 | Actual: Other      | Predicted: Open       | Confidence:  91.19% | Decision: ACCEPT
+Image 0191 | Actual: Other      | Predicted: Clean      | Confidence:  91.23% | Decision: ACCEPT
+Image 0192 | Actual: Other      | Predicted: Open       | Confidence:  99.98% | Decision: ACCEPT
+Image 0193 | Actual: Other      | Predicted: Clean      | Confidence:  99.36% | Decision: ACCEPT
+Image 0194 | Actual: Other      | Predicted: Open       | Confidence:  63.62% | Decision: ACCEPT
+Image 0195 | Actual: Other      | Predicted: Open       | Confidence:  41.07% | Decision: REJECT
+Image 0196 | Actual: Other      | Predicted: Open       | Confidence:  98.49% | Decision: ACCEPT
+Image 0197 | Actual: Other      | Predicted: Particle   | Confidence:  45.50% | Decision: REJECT
+Image 0198 | Actual: Other      | Predicted: Open       | Confidence:  97.76% | Decision: ACCEPT
+Image 0199 | Actual: Other      | Predicted: LER        | Confidence:  98.12% | Decision: ACCEPT
+Image 0200 | Actual: Other      | Predicted: Clean      | Confidence:  95.11% | Decision: ACCEPT
+Image 0201 | Actual: Other      | Predicted: CMP        | Confidence:  48.75% | Decision: REJECT
+Image 0202 | Actual: Other      | Predicted: Clean      | Confidence:  51.71% | Decision: REJECT
+Image 0203 | Actual: Other      | Predicted: Bridge     | Confidence:  97.77% | Decision: ACCEPT
+Image 0204 | Actual: Other      | Predicted: Particle   | Confidence:  68.50% | Decision: ACCEPT
+Image 0205 | Actual: Other      | Predicted: Crack      | Confidence:  85.34% | Decision: ACCEPT
+Image 0206 | Actual: Other      | Predicted: Particle   | Confidence:  37.73% | Decision: REJECT
+Image 0207 | Actual: Other      | Predicted: Crack      | Confidence:  92.63% | Decision: ACCEPT
+Image 0208 | Actual: Other      | Predicted: Particle   | Confidence:  74.71% | Decision: ACCEPT
+Image 0209 | Actual: Other      | Predicted: Open       | Confidence:  99.91% | Decision: ACCEPT
+Image 0210 | Actual: Other      | Predicted: VIA        | Confidence:  92.82% | Decision: ACCEPT
+Image 0211 | Actual: Other      | Predicted: VIA        | Confidence:  90.28% | Decision: ACCEPT
+Image 0212 | Actual: Other      | Predicted: VIA        | Confidence:  91.95% | Decision: ACCEPT
+Image 0213 | Actual: Other      | Predicted: VIA        | Confidence:  56.23% | Decision: REJECT
+Image 0214 | Actual: Other      | Predicted: VIA        | Confidence:  99.98% | Decision: ACCEPT
+Image 0215 | Actual: Other      | Predicted: VIA        | Confidence:  99.99% | Decision: ACCEPT
+Image 0216 | Actual: Other      | Predicted: VIA        | Confidence:  36.57% | Decision: REJECT
+Image 0217 | Actual: Other      | Predicted: Particle   | Confidence:  91.66% | Decision: ACCEPT
+Image 0218 | Actual: Other      | Predicted: Open       | Confidence:  56.59% | Decision: REJECT
+Image 0219 | Actual: Other      | Predicted: LER        | Confidence:  64.25% | Decision: ACCEPT
+Image 0220 | Actual: Other      | Predicted: Clean      | Confidence:  45.14% | Decision: REJECT
+Image 0221 | Actual: Other      | Predicted: Particle   | Confidence:  55.42% | Decision: REJECT
+Image 0222 | Actual: Other      | Predicted: VIA        | Confidence:  65.51% | Decision: ACCEPT
+Image 0223 | Actual: Other      | Predicted: Clean      | Confidence:  79.90% | Decision: ACCEPT
+Image 0224 | Actual: Other      | Predicted: Clean      | Confidence:  88.59% | Decision: ACCEPT
+Image 0225 | Actual: Other      | Predicted: VIA        | Confidence:  92.24% | Decision: ACCEPT
+Image 0226 | Actual: Other      | Predicted: VIA        | Confidence:  70.35% | Decision: ACCEPT
+Image 0227 | Actual: Other      | Predicted: VIA        | Confidence:  67.16% | Decision: ACCEPT
+Image 0228 | Actual: Other      | Predicted: Clean      | Confidence:  95.64% | Decision: ACCEPT
+Image 0229 | Actual: Other      | Predicted: Particle   | Confidence:  41.48% | Decision: REJECT
+Image 0230 | Actual: Other      | Predicted: Open       | Confidence:  67.11% | Decision: ACCEPT
+Image 0231 | Actual: Other      | Predicted: Open       | Confidence:  90.65% | Decision: ACCEPT
+Image 0232 | Actual: Other      | Predicted: Clean      | Confidence:  84.62% | Decision: ACCEPT
+Image 0233 | Actual: Other      | Predicted: CMP        | Confidence:  48.24% | Decision: REJECT
+Image 0234 | Actual: Other      | Predicted: Clean      | Confidence:  47.76% | Decision: REJECT
+Image 0235 | Actual: Other      | Predicted: Crack      | Confidence:  55.04% | Decision: REJECT
+Image 0236 | Actual: Other      | Predicted: Open       | Confidence:  60.74% | Decision: ACCEPT
+Image 0237 | Actual: Particle   | Predicted: Open       | Confidence:  95.83% | Decision: ACCEPT
+Image 0238 | Actual: Particle   | Predicted: VIA        | Confidence:  92.05% | Decision: ACCEPT
+Image 0239 | Actual: Particle   | Predicted: Open       | Confidence:  99.97% | Decision: ACCEPT
+Image 0240 | Actual: Particle   | Predicted: Bridge     | Confidence:  88.08% | Decision: ACCEPT
+Image 0241 | Actual: Particle   | Predicted: Open       | Confidence:  63.48% | Decision: ACCEPT
+Image 0242 | Actual: Particle   | Predicted: Open       | Confidence:  91.08% | Decision: ACCEPT
+Image 0243 | Actual: Particle   | Predicted: Other      | Confidence:  65.09% | Decision: ACCEPT
+Image 0244 | Actual: Particle   | Predicted: Open       | Confidence:  94.95% | Decision: ACCEPT
+Image 0245 | Actual: Particle   | Predicted: LER        | Confidence:  45.74% | Decision: REJECT
+Image 0246 | Actual: Particle   | Predicted: Open       | Confidence:  49.53% | Decision: REJECT
+Image 0247 | Actual: Particle   | Predicted: CMP        | Confidence:  44.71% | Decision: REJECT
+Image 0248 | Actual: Particle   | Predicted: Clean      | Confidence:  59.61% | Decision: REJECT
+Image 0249 | Actual: Particle   | Predicted: Particle   | Confidence:  94.08% | Decision: ACCEPT
+Image 0250 | Actual: Particle   | Predicted: VIA        | Confidence:  50.72% | Decision: REJECT
+Image 0251 | Actual: Particle   | Predicted: Particle   | Confidence:  77.86% | Decision: ACCEPT
+Image 0252 | Actual: Particle   | Predicted: Particle   | Confidence:  99.46% | Decision: ACCEPT
+Image 0253 | Actual: Particle   | Predicted: Open       | Confidence:  81.99% | Decision: ACCEPT
+Image 0254 | Actual: Particle   | Predicted: Open       | Confidence:  97.91% | Decision: ACCEPT
+Image 0255 | Actual: Particle   | Predicted: VIA        | Confidence:  92.70% | Decision: ACCEPT
+Image 0256 | Actual: Particle   | Predicted: Open       | Confidence:  91.29% | Decision: ACCEPT
+Image 0257 | Actual: Particle   | Predicted: CMP        | Confidence:  58.77% | Decision: REJECT
+Image 0258 | Actual: Particle   | Predicted: Bridge     | Confidence:  99.75% | Decision: ACCEPT
+Image 0259 | Actual: Particle   | Predicted: CMP        | Confidence:  97.54% | Decision: ACCEPT
+Image 0260 | Actual: Particle   | Predicted: Bridge     | Confidence:  98.24% | Decision: ACCEPT
+Image 0261 | Actual: Particle   | Predicted: VIA        | Confidence:  84.67% | Decision: ACCEPT
+Image 0262 | Actual: Particle   | Predicted: Open       | Confidence:  34.76% | Decision: REJECT
+Image 0263 | Actual: Particle   | Predicted: CMP        | Confidence:  54.17% | Decision: REJECT
+Image 0264 | Actual: Particle   | Predicted: Open       | Confidence:  56.89% | Decision: REJECT
+Image 0265 | Actual: Particle   | Predicted: VIA        | Confidence:  40.09% | Decision: REJECT
+Image 0266 | Actual: Particle   | Predicted: Other      | Confidence:  69.52% | Decision: ACCEPT
+Image 0267 | Actual: VIA        | Predicted: VIA        | Confidence:  99.74% | Decision: ACCEPT
+Image 0268 | Actual: VIA        | Predicted: VIA        | Confidence:  76.59% | Decision: ACCEPT
+Image 0269 | Actual: VIA        | Predicted: Open       | Confidence:  40.75% | Decision: REJECT
+Image 0270 | Actual: VIA        | Predicted: VIA        | Confidence:  91.76% | Decision: ACCEPT
+Image 0271 | Actual: VIA        | Predicted: VIA        | Confidence:  91.76% | Decision: ACCEPT
+Image 0272 | Actual: VIA        | Predicted: VIA        | Confidence:  99.99% | Decision: ACCEPT
+Image 0273 | Actual: VIA        | Predicted: VIA        | Confidence:  99.85% | Decision: ACCEPT
+Image 0274 | Actual: VIA        | Predicted: VIA        | Confidence:  88.58% | Decision: ACCEPT
+Image 0275 | Actual: VIA        | Predicted: VIA        | Confidence:  36.74% | Decision: REJECT
+Image 0276 | Actual: VIA        | Predicted: Clean      | Confidence:  72.67% | Decision: ACCEPT
+Image 0277 | Actual: VIA        | Predicted: Clean      | Confidence:  78.14% | Decision: ACCEPT
+Image 0278 | Actual: VIA        | Predicted: Clean      | Confidence:  94.22% | Decision: ACCEPT
+Image 0279 | Actual: VIA        | Predicted: VIA        | Confidence:  84.77% | Decision: ACCEPT
+Image 0280 | Actual: VIA        | Predicted: VIA        | Confidence:  88.36% | Decision: ACCEPT
+Image 0281 | Actual: VIA        | Predicted: Clean      | Confidence:  49.63% | Decision: REJECT
+Image 0282 | Actual: VIA        | Predicted: VIA        | Confidence:  93.48% | Decision: ACCEPT
+Image 0283 | Actual: VIA        | Predicted: Clean      | Confidence:  90.88% | Decision: ACCEPT
+Image 0284 | Actual: VIA        | Predicted: VIA        | Confidence:  99.47% | Decision: ACCEPT
+Image 0285 | Actual: VIA        | Predicted: VIA        | Confidence:  65.01% | Decision: ACCEPT
+Image 0286 | Actual: VIA        | Predicted: VIA        | Confidence:  99.90% | Decision: ACCEPT
+Image 0287 | Actual: VIA        | Predicted: Clean      | Confidence:  83.69% | Decision: ACCEPT
+Image 0288 | Actual: VIA        | Predicted: VIA        | Confidence:  80.03% | Decision: ACCEPT
+Image 0289 | Actual: VIA        | Predicted: Open       | Confidence:  50.32% | Decision: REJECT
+Image 0290 | Actual: VIA        | Predicted: VIA        | Confidence:  27.31% | Decision: REJECT
+Image 0291 | Actual: VIA        | Predicted: VIA        | Confidence:  99.05% | Decision: ACCEPT
+Image 0292 | Actual: VIA        | Predicted: Clean      | Confidence:  84.29% | Decision: ACCEPT
+Image 0293 | Actual: VIA        | Predicted: VIA        | Confidence:  35.25% | Decision: REJECT
+Image 0294 | Actual: VIA        | Predicted: Crack      | Confidence:  49.58% | Decision: REJECT
+Image 0295 | Actual: VIA        | Predicted: Clean      | Confidence:  99.06% | Decision: ACCEPT
+Image 0296 | Actual: VIA        | Predicted: VIA        | Confidence:  89.57% | Decision: ACCEPT
+
+================ FINAL RESULTS =================
+
+Overall Accuracy  : 50.84 %
+Overall Precision: 48.61 %
+Overall Recall   : 49.58 %
+
+Class-wise Accuracy:
+Bridge     : 68.97 %
+CMP        : 72.00 %
+Clean      : 55.17 %
+Crack      : 60.87 %
+LER        : 53.57 %
+Open       : 61.54 %
+Other      : 8.57 %
+Particle   : 15.00 %
+VIA        : 69.57 %
+
+Precision per Class:
+Bridge     : 51.28 %
+CMP        : 90.00 %
+Clean      : 32.65 %
+Crack      : 87.50 %
+LER        : 78.95 %
+Open       : 39.02 %
+Other      : 0.00 %
+Particle   : 37.50 %
+VIA        : 39.02 %
+
+Recall per Class:
+Bridge     : 68.97 %
+CMP        : 72.00 %
+Clean      : 55.17 %
+Crack      : 60.87 %
+LER        : 53.57 %
+Open       : 61.54 %
+Other      : 0.00 %
+Particle   : 15.00 %
+VIA        : 69.57 %
+
+Saved Files:
+outputs/confusion_matrix.png
+outputs/precision.png
+outputs/recall.png
+
+================ END ================
+

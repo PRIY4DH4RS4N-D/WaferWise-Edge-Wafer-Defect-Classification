@@ -1,0 +1,5 @@
+*.pth
+*.onnx.data
+*.tflite
+*.safetensors
+*.h5

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 350" width="100%">
+  <defs>
+    <style>
+      text { font-family: 'Inter', sans-serif; }
+      
+      .bg-panel { fill: #0B0F19; }
+      
+      .box { fill: #111827; stroke: #1F2937; stroke-width: 2; rx: 8; }
+      .box-highlight { fill: #1E293B; stroke: #38BDF8; stroke-width: 2; rx: 8; }
+      
+      .inner-node { fill: #0F172A; stroke: #334155; stroke-width: 1.5; rx: 4; }
+      
+      .text-title { fill: #F8FAFC; font-size: 16px; font-weight: 800; }
+      .text-subtitle { fill: #94A3B8; font-size: 12px; font-weight: 600; letter-spacing: 1px; }
+      .text-label { fill: #E2E8F0; font-size: 12px; font-weight: 600; }
+      .text-small { fill: #64748B; font-size: 10px; }
+      
+      @keyframes flow {
+        0% { stroke-dashoffset: 24; }
+        100% { stroke-dashoffset: 0; }
+      }
+      
+      .path-data {
+        fill: none;
+        stroke: #38BDF8;
+        stroke-width: 3;
+        stroke-dasharray: 6 6;
+        animation: flow 0.6s linear infinite reverse;
+      }
+      
+      .path-result {
+        fill: none;
+        stroke: #4ADE80;
+        stroke-width: 3;
+        stroke-dasharray: 6 6;
+        animation: flow 0.6s linear infinite reverse;
+      }
+      
+    </style>
+  </defs>
+
+  <rect width="100%" height="100%" class="bg-panel" />
+  
+  <text x="40" y="40" class="text-title">EDGE AI INFERENCE PIPELINE</text>
+  <text x="40" y="60" class="text-subtitle">WAFER DEFECT CLASSIFICATION LOOP</text>
+
+  <!-- Input Block -->
+  <rect x="40" y="100" width="180" height="150" class="box" />
+  <text x="55" y="130" class="text-subtitle">1. SENSOR / RAW</text>
+  <rect x="55" y="150" width="150" height="40" class="inner-node" />
+  <text x="65" y="175" class="text-label" fill="#EAB308">Wafer Acquisition</text>
+  <rect x="55" y="200" width="150" height="30" class="inner-node" />
+  <text x="65" y="220" class="text-small">High-Res Image</text>
+
+  <!-- Preprocessing Block -->
+  <rect x="260" y="100" width="180" height="150" class="box" />
+  <text x="275" y="130" class="text-subtitle">2. PREPROCESS</text>
+  <rect x="275" y="150" width="150" height="30" class="inner-node" />
+  <text x="285" y="170" class="text-label">Grayscale Conv.</text>
+  <rect x="275" y="190" width="150" height="30" class="inner-node" />
+  <text x="285" y="210" class="text-label">Scale 224x224</text>
+
+  <!-- Accelerator Block -->
+  <rect x="480" y="80" width="240" height="190" class="box-highlight" />
+  <text x="495" y="110" class="text-subtitle" fill="#38BDF8">3. EDGE ACCELERATOR</text>
+  <rect x="495" y="130" width="210" height="40" class="inner-node" />
+  <text x="505" y="155" class="text-label">ONNX Runtime Core</text>
+  
+  <rect x="495" y="180" width="210" height="40" class="inner-node" />
+  <text x="505" y="205" class="text-label" fill="#F472B6">MobileNetV3-Small</text>
+  <text x="505" y="250" class="text-small" fill="#94A3B8">Inference Latency: ~10ms</text>
+  <text x="505" y="265" class="text-small" fill="#94A3B8">Model Footprint: 296 KB</text>
+
+  <!-- Output Block -->
+  <rect x="760" y="100" width="200" height="150" class="box" />
+  <text x="775" y="130" class="text-subtitle">4. CLASSIFICATION</text>
+  <rect x="775" y="150" width="170" height="30" class="inner-node" />
+  <text x="785" y="170" class="text-label" fill="#4ADE80">Result: Crack Defect</text>
+  <rect x="775" y="190" width="170" height="30" class="inner-node" />
+  <text x="785" y="210" class="text-small">Confidence: 98.4%</text>
+
+  <!-- Connections -->
+  <path class="path-data" d="M 220,175 L 260,175" />
+  <path class="path-data" d="M 440,175 L 480,175" />
+  <path class="path-result" d="M 720,175 L 760,175" />
+  
+</svg>
