@@ -76,7 +76,7 @@ The trained `.pth` PyTorch model is exported to `.onnx`. This decouples the mode
 
 ---
 
-## 📊 Results & Validation
+## 📊 Results & Validations
 
 The system demonstrates strong class-wise separation across all defect categories, specifically validating the `Other` class's ability to trap ambiguous samples rather than misclassifying them as critical defects.
 
